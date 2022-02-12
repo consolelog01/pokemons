@@ -1,0 +1,35 @@
+span {
+    display: block;
+}
+
+.p-a {
+    position: absolute;
+}
+
+.p-r {
+    position: relative;
+}
+
+.rigth-0-p-a {
+    right: 0;
+}
+
+.left-0-p-a {
+    left: 0;
+}
+
+.top-0-p-a {
+    top: 0;
+}
+
+.bottom-0-p-a {
+    bottom: 0;
+}
+
+.h-100-p {
+    height: 100%;
+}
+
+.animation-none {
+    animation: unset!important;
+}
