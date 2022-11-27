@@ -17,13 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/pokemons/especies/acuaticos', function(){
+Route::get('/pokemons/especies', function(){
     
     $nombre = 'SQUIRTLE';
     $descripcion = 'El caparazón de Squirtle no le sirve de protección únicamente. Su forma redondeada y las hendiduras que tiene le ayudan a deslizarse en el agua y le permiten nadar a gran velocidad. Lanza agua a su presa desde el agua. Se esconde en su concha cuando se siente en peligro. Se protege con su caparazón y luego contraataca lanzando agua a presión cuando tiene oportunidad.';
     
     return view(
-        'pokemons.especiesAcuaticas', 
+        'pokemons.pokemonsEspecies', 
         [
             'nombre'=>$nombre, 
             'descripcion'=>$descripcion
@@ -32,4 +32,4 @@ Route::get('/pokemons/especies/acuaticos', function(){
 
 });
 
-return View::make('pokemons.especiesAcuaticas', ['nombre' => 'Juan', 'apellidos' => "Gomez Perez"])->with('name', 'Victoria');
+return View::make('pokemons.pokemonsEspecies', ['nombre' => 'Ramón', 'apellidos' => "Martínez Cruz"])->with('name', 'Victoria');
